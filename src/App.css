@@ -1,0 +1,55 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+div.watch {
+  border: 1px solid red;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  border-radius: 50%;
+}
+.watch div.arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid red;
+  width: 1px;
+  height: 60px;
+}
+.watch div.arrow.hours {
+  width: 1px;
+  height: 40px;
+  top: 20px;
+  border-left: 3px solid red;
+}
+.watch div.arrow.minutes {
+  width: 2px;
+  height: 50px;
+  top: 10px;
+  border-left: 2px solid red;
+}
+.watches-list {
+  display: flex;
+}
+.close-btn {
+  cursor: pointer;
+  font-weight: bold;
+  width: 30px;
+}
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px 10px;
+}
+.form {
+  display: flex;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 4px 4px;
+}
