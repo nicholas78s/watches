@@ -38,7 +38,8 @@ export class Watch extends React.Component<WatchPropsType, WatchStateType> {
   }
 
   getOffsetDate(offset: number) {
-    return new Date(Date.now() + offset * (60 * 60 * 1000) );
+    let userOffset: number = new Date().getTimezoneOffset() / 60 ;
+    return new Date(Date.now() + (+userOffset + +offset) * (60 * 60 * 1000) );
   }
 
   tick() {

@@ -36,10 +36,11 @@ export class Form extends React.Component<PropsType, State> {
   handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const {name, value} = e.target;
     
-    if ( (name == 'offset') && ( /^\-?[0-9]?[0-9]?$/.test(value) ) )
-        this.setState((_state, _props) => ({ offset: value }));
-    else if (name === 'name')
+    if ((name == 'offset') && (/^\-?[0-9]?[0-9]?$/.test(value))) {
+      this.setState((_state, _props) => ({ offset: value }));
+    } else if (name === 'name') {
       this.setState((_state, _props) => ({ name: value }));
+    }
   }
 
   render() {
